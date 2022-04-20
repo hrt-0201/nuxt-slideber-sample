@@ -1,5 +1,5 @@
 <template>
     <div>
-        hogehoge
+        ふがふが
     </div>
 </template>

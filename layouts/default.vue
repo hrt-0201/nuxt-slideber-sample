@@ -1,5 +1,5 @@
 <template>
   <div>
-    ほげほげ
+    <BottomMenu />
   </div>
 </template>
