@@ -81,7 +81,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 *,
 *:before,
 *:after {
@@ -90,25 +90,25 @@ export default {
   transition: all 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-/* body,
+body,
 html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-} */
+}
 
-/* body {
+body {
   background: #c9d2de;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* ---------------------------------- */
 #app {
-  height: 100vh;
-  width: 60vh;
+  height: 200vw;
+  width: 100vw;
   /* transform: scale(0.8); */
   border-radius: 2rem;
   background-color: #bec9d6;
