@@ -107,7 +107,7 @@ body {
 
 /* ---------------------------------- */
 #app {
-  height: 200vw;
+  height: 180vw;
   width: 100vw;
   /* transform: scale(0.8); */
   border-radius: 2rem;
