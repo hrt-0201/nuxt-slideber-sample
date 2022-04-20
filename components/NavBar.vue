@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 
 .container {

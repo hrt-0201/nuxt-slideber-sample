@@ -120,9 +120,9 @@ body {
 .ui-nav {
   overflow: hidden;
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
   height: 10vh;
   display: flex;
   align-items: stretch;
