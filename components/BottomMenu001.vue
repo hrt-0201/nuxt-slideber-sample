@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  name: "BottomMenu",
+  name: "BottomMenu001",
 };
 </script>
 

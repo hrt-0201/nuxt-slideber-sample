@@ -1,5 +1,5 @@
 <template>
   <div>
-    ほげほげ
+    <Slideshow />
   </div>
 </template>
