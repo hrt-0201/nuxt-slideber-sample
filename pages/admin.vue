@@ -15,15 +15,15 @@
       <label for="none">未回答</label>
     </div>
     <Caption001 message="年代" />
-    <div class="radio-area01">
-      <input class="visually-hidden" type="radio" name="fruits" id="man" />
-      <label for="man">10代</label>
-      <input class="visually-hidden" type="radio" name="fruits" id="woman" />
-      <label for="woman">20代</label>
-      <input class="visually-hidden" type="radio" name="fruits" id="etc" />
-      <label for="etc">30代</label>
-      <input class="visually-hidden" type="radio" name="fruits" id="none" />
-      <label for="none">未回答</label>
+    <div class="radio-area02">
+      <input class="visually-hidden01" type="radio" name="human" id="human10" />
+      <label for="human10">10代</label>
+      <input class="visually-hidden01" type="radio" name="human" id="human20" />
+      <label for="human20">20代</label>
+      <input class="visually-hidden01" type="radio" name="human" id="human30" />
+      <label for="human30">30代</label>
+      <input class="visually-hidden01" type="radio" name="human" id="humannone" />
+      <label for="humannone">未回答</label>
     </div>
     <Caption001 message="興味のある項目" />
     <Checkbox />
@@ -89,6 +89,18 @@ input:checked + label::after {
 }
 
 .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+.visually-hidden01 {
   position: absolute;
   white-space: nowrap;
   border: 0;

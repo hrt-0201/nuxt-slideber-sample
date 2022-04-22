@@ -9,6 +9,10 @@
     <li><input type="checkbox" id="checkboxFive" value="Surprise"><label for="checkboxFive">ちょいと背伸び</label></li>
     <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle"><label for="checkboxSix">子供の心を忘れたくない</label></li>
     <li><input type="checkbox" id="checkboxSeven" value="Fluttershy"><label for="checkboxSeven">気分は秋葉原</label></li>
+    <li><input type="checkbox" id="checkboxEight" value="Zannen"><label for="checkboxEight">港区〇〇に憧れ</label></li>
+    <li><input type="checkbox" id="checkboxNine" value="Old"><label for="checkboxNine">昭和を感じたい</label></li>
+    <li><input type="checkbox" id="checkboxTen" value="Utsunomiya"><label for="checkboxTen">宇都宮といえばここ！</label></li>
+    <li><input type="checkbox" id="checkboxEleven" value="Communication"><label for="checkboxEleven">宇大意外と交流したい</label></li>
   </ul>
 
 </div>
