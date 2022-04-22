@@ -5,8 +5,10 @@
       ><div class="title-design">{{ title }}</div></label
     >
     <div class="acd-content">
-      <p class="news-text">{{ text }}</p>
-      <a :href="link" class="news-link"><i class="fas fa-newspaper"></i> 記事の続きはこちらから</a>
+      <div class="news-text" style="max-width: 400px;">{{ text }}</div>
+      <a :href="link" class="news-link"
+        ><i class="fas fa-newspaper"></i> 記事の続きはこちらから</a
+      >
     </div>
   </div>
 </template>
@@ -38,12 +40,12 @@ export default {
 }
 .news-text {
   display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .news-link {
-    right: 5px;
+  right: 5px;
 }
 .acd-label:after {
   background: #287703;
