@@ -1,6 +1,6 @@
 <template>
-  <div class="sakura_area">
-    <ul class="sakura">
+  <div class="header_area">
+    <ul class="header">
       <h1>Utsunomiya News</h1>
     </ul>
   </div>
@@ -13,16 +13,17 @@ export default {
 </script>
 
 <style scoped>
-.sakura_area {
-  width: 100%;
+.header_area {
+  width: 124%;
   height: 100px;
   padding-top: 0px;
   overflow: hidden;
   background: linear-gradient(#00bfff, #fff);
 }
 
-.sakura {
-  position: absolute;
+.header {
+  /* position: absolute;を設定するとボトムメニューが崩れるためコメントアウト */
+  /* position: absolute; */
   padding: 0;
   margin: 0;
   width: 100%;
@@ -32,7 +33,7 @@ export default {
   align-items: center;
 }
 
-.sakura h1 {
+.header h1 {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 2rem;
   color: #fff;

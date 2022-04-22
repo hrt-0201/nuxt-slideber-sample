@@ -1,8 +1,10 @@
 <template>
     <div>
-        <div><Sakura /></div>
+        <div class="header-area"><Sakura /></div>
+        <div class="contents-area">
         <div v-for="(post, index) in posts" :key="index">
             <Accordion001 :title=post.title :text=post.description :link=post.link :no=index />
+        </div>
         </div>
     </div>
 </template>
@@ -47,4 +49,12 @@ export default {
 </script>
 
 <style scoped>
+.header-area {
+    position: fixed;
+    z-index: 2;
+}
+.contents-area {
+    z-index: 1;
+    padding-top: 100px;
+}
 </style>

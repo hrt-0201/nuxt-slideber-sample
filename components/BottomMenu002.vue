@@ -64,7 +64,7 @@ ul.bottom-menu {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px; /*高さ*/
+  height: 80px; /*高さ*/
   margin: 0;
   padding: 0;
   background-color: #f5f5f5; /*背景色*/
