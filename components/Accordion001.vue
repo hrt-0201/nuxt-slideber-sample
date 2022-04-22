@@ -1,16 +1,19 @@
 <template>
   <div>
     <input :id="'acd-check1' + no" class="acd-check" type="checkbox" />
-    <label class="acd-label" :for="'acd-check1' + no">{{title}}</label>
+    <label class="acd-label" :for="'acd-check1' + no"
+      ><div class="title-design">{{ title }}</div></label
+    >
     <div class="acd-content">
-      <p>{{text}}</p>
+      <p class="news-text">{{ text }}</p>
+      <a :href="link" class="news-link"><i class="fas fa-newspaper"></i> 記事の続きはこちらから</a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    props: ["title", "text", "no"],
+  props: ["title", "text", "link", "no"],
   name: "Accordion001",
 };
 </script>
@@ -26,6 +29,21 @@ export default {
   margin-bottom: 1px;
   padding: 10px;
   position: relative;
+}
+.title-design {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news-text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.news-link {
+    right: 5px;
 }
 .acd-label:after {
   background: #287703;
@@ -54,7 +72,7 @@ export default {
   content: "\f068";
 }
 .acd-check:checked + .acd-label + .acd-content {
-  height: 50px;
+  height: 300px;
   opacity: 1;
   padding: 10px;
   visibility: visible;

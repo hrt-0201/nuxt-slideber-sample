@@ -1,8 +1,8 @@
 <template>
     <div>
-        
+        <div><Sakura /></div>
         <div v-for="(post, index) in posts" :key="index">
-            <Accordion001 :title=post.title :text=post.description :no=index />
+            <Accordion001 :title=post.title :text=post.description :link=post.link :no=index />
         </div>
     </div>
 </template>

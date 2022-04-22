@@ -16,14 +16,15 @@
           <span class="mini-text">ニュース</span>
         </a>
 
-        <ul class="menu-second-level">
-          <!-- 下の"#"の部分におすすめ"記事URL"とタイトル等を入れる -->
+        <!-- 下の"#"の部分におすすめ"記事URL"とタイトル等を入れる -->
+        <!-- 今のところ使い道がないのでコメントアウト -->
+        <!-- <ul class="menu-second-level">
           <li><a href="#">タイトル１</a></li>
           <li><a href="#">タイトル２</a></li>
           <li><a href="#">タイトル３</a></li>
           <li><a href="#">タイトル４</a></li>
           <li><a href="#">タイトル５</a></li>
-        </ul>
+        </ul> -->
       </li>
       <li>
         <!-- ↓↓項目3.　-->

@@ -1,9 +1,9 @@
 <template>
   <div>
+    <Nuxt />
     <div class="menu">
       <BottomMenu002 />
     </div>
-    <Nuxt />
   </div>
 </template>
 
