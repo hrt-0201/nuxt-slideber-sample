@@ -89,7 +89,7 @@ export default {
 
 .hero__inner {
   margin: 0 auto;
-  width: 1100px;
+  width: 400px;
 }
 
 /* ------ hero title ------- */
