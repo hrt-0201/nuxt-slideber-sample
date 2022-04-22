@@ -42,7 +42,7 @@ export default {
 }
 .balloon-point {
   position: fixed;
-  top: 75%;
+  top: 70%;
   left: 50%;
 }
 
