@@ -13,8 +13,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap");
-
 .sakura_area {
   width: 100%;
   height: 100px;
