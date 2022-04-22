@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 .header_area {
-  width: 124%;
+  width: 100%;
   height: 100px;
   padding-top: 0px;
   overflow: hidden;

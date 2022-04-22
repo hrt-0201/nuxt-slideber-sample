@@ -8,6 +8,9 @@
         <div class="ticket-design">
             <Ticket001 item="串盛り割引" store="ほげ貴族" beforeprice="1500" afterprice="1000"/>
         </div>
+        <div class="ticket-design">
+            <Ticket001 item="森伊蔵１杯" store="ほげ中屋" beforeprice="1500" afterprice="無料!!"/>
+        </div>
     </div>
 </template>
 

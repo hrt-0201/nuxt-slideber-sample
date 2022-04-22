@@ -50,11 +50,11 @@ export default {
 
 <style scoped>
 .header-area {
-    position: fixed;
+    /* position: fixed; */
     z-index: 2;
 }
 .contents-area {
     z-index: 1;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 </style>

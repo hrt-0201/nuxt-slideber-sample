@@ -72,7 +72,7 @@ export default {
   content: "\f068";
 }
 .acd-check:checked + .acd-label + .acd-content {
-  height: 300px;
+  height: 150px;
   opacity: 1;
   padding: 10px;
   visibility: visible;
