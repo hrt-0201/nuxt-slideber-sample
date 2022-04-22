@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <div class="title-area">
-        <Title001 message="個人設定" />
+      <Title001 message="個人設定" />
     </div>
     <Caption001 message="性別" />
     <div class="radio-area01">
@@ -27,12 +27,28 @@
     </div>
     <Caption001 message="興味のある項目" />
     <Checkbox />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
 <style scoped>
+.container {
+  width: 100%;
+  height: 100%;
+}
 .title-area {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 label {
   position: relative;

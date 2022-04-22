@@ -1,5 +1,5 @@
 <template>
-  <div classs="container">
+  <div class="container">
     <Slideshow />
     
     <h1>お店の最新のつぶやき</h1>
