@@ -2,6 +2,8 @@
   <div class="container">
     <Slideshow />
 
+    LINE ID：{{ lineId }}
+
     <h1>お店の最新のつぶやき</h1>
     <div v-for="comment in comments" :key="comment.update_date">
       <Balloon001
