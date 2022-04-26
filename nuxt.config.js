@@ -14,6 +14,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' }
+    ],
+    script: [
+      { src: 'https://static.line-scdn.net/liff/edge/2/sdk.js' }
     ]
   },
 

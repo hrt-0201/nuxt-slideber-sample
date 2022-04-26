@@ -1,4 +1,5 @@
 <template>
+<!-- 参考にしたページ：https://webdesignday.jp/inspiration/technique/css/5316/ -->
   <div>
     <input :id="'acd-check1' + no" class="acd-check" type="checkbox" />
     <label class="acd-label" :for="'acd-check1' + no"

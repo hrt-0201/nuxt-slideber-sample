@@ -42,6 +42,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      lineId: null
+    }
+  },
+  mounted() {
+
+    window.liff.init(data => {
+      this.lineId = data.context.userId || null
+    })
+  }
+};
+</script>
+
 <style scoped>
 .container {
   width: 100%;

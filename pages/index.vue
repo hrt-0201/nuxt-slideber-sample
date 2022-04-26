@@ -37,6 +37,20 @@ export default {
       comments: response.Items,
     };
   },
+  data() {
+    return {
+      lineId: null
+    }
+  },
+  mounted() {
+    // if (!this.canUseLIFF()) {
+    //   return
+    // }
+
+    window.liff.init(data => {
+      this.lineId = data.context.userId || null
+    })
+  }
 };
 </script>
 

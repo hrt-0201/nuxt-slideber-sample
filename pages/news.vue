@@ -1,12 +1,17 @@
 <template>
-    <div>
-        <div class="header-area"><Sakura /></div>
-        <div class="contents-area">
-        <div v-for="(post, index) in posts" :key="index">
-            <Accordion001 :title=post.title :text=post.description :link=post.link :no=index />
-        </div>
-        </div>
+  <div>
+    <div class="header-area"><Sakura /></div>
+    <div class="contents-area">
+      <div v-for="(post, index) in posts" :key="index">
+        <Accordion001
+          :title="post.title"
+          :text="post.description"
+          :link="post.link"
+          :no="index"
+        />
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -33,11 +38,20 @@ export default {
   data: () => {
     return {
       content: "",
+      lineId: null,
     };
   },
+  mounted() {
+    // if (!this.canUseLIFF()) {
+    //   return
+    // }
+
+    window.liff.init((data) => {
+      this.lineId = data.context.userId || null;
+    });
+  },
   head: {
-    link: [
-    ],
+    link: [],
   },
   computed: {},
   methods: {
@@ -50,11 +64,11 @@ export default {
 
 <style scoped>
 .header-area {
-    /* position: fixed; */
-    z-index: 2;
+  /* position: fixed; */
+  z-index: 2;
 }
 .contents-area {
-    z-index: 1;
-    /* padding-top: 100px; */
+  z-index: 1;
+  /* padding-top: 100px; */
 }
 </style>
