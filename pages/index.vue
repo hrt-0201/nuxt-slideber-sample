@@ -4,7 +4,7 @@
 
     <div class="line-info">
       <p>status：{{ status }}</p>
-      <p>LINE ID：{{ lineId }}</p>
+      <!-- <p>LINE ID：{{ lineId }}</p> -->
     </div>
 
   <ul>
