@@ -1,5 +1,5 @@
 <template>
     <div>
-        ふがふが
+        ふが
     </div>
 </template>

@@ -2,7 +2,18 @@
   <div class="container">
     <Slideshow />
 
-    LINE ID：{{ lineId }}
+    <div class="line-info">
+      <p>status：{{ status }}</p>
+      <p>LINE ID：{{ lineId }}</p>
+    </div>
+
+  <ul>
+    <li v-for="todo in todos" :key="todo.text">
+      <input :checked="todo.done" @change="toggle(todo)" type="checkbox">
+      <span :class="{ done: todo.done }">{{ todo.text }}</span>
+    </li>
+    <li><input @keyup.enter="addTodo" placeholder="What needs to be done?"></li>
+  </ul>
 
     <h1>お店の最新のつぶやき</h1>
     <div v-for="comment in comments" :key="comment.update_date">
@@ -20,6 +31,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   async asyncData({ $axios }) {
     const params = {
@@ -41,16 +54,44 @@ export default {
   },
   data() {
     return {
-      lineId: null
-    }
+      lineId: null,
+      status: null,
+    };
   },
   mounted() {
     // if (!this.canUseLIFF()) {
     //   return
     // }
 
-    window.liff.init(data => {
-      this.lineId = data.context.userId || null
+    liff
+      .init({
+        // TODO: Liff IDは環境変数にする
+        liffId: "1657084401-YLk3zQKz", // Use own liffId
+      })
+      .then(() => {
+        // start to use LIFF's api
+        this.status = "success!!!!";
+        // ID Tokenを取得する
+        const idToken = liff.getIDToken();
+        console.log(idToken);
+        this.lineId = idToken;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },
+  computed: {
+    todos () {
+      return this.$store.state.todo.list
+    }
+  },
+  methods: {
+    addTodo (e) {
+      this.$store.commit('todo/add', e.target.value)
+      e.target.value = ''
+    },
+    ...mapMutations({
+      toggle: 'todo/toggle'
     })
   }
 };
@@ -60,6 +101,12 @@ export default {
 .container {
   width: 100%;
   height: 100%;
+}
+.line-info {
+  width:350px;
+}
+.line-info p {
+  font-size: 0.5rem;
 }
 .balloon-point {
   position: fixed;

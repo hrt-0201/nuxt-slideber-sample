@@ -46,9 +46,9 @@ export default {
     //   return
     // }
 
-    window.liff.init((data) => {
-      this.lineId = data.context.userId || null;
-    });
+    // window.liff.init((data) => {
+    //   this.lineId = data.context.userId || null;
+    // });
   },
   head: {
     link: [],
